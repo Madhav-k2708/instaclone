@@ -9,7 +9,7 @@ const useGetSuggestedUsers = () => {
   useEffect(() => {
     const fetchSuggestedUsers= async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/v1/user/suggested-users", {
+        const res = await axios.get("https://instaclone-1-11yj.onrender.com/api/v1/user/suggested-users", {
           withCredentials: true,
         });
         if (res.data.success) {

@@ -27,7 +27,7 @@ const Login = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/v1/user/login",
+        "https://instaclone-1-11yj.onrender.com/api/v1/user/login",
         input,
         {
           headers: {
